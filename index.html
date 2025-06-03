@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./output.css">
+    <title>Stop Watch</title>
+</head>
+
+<body class="bg-slate-500">
+    <div style="background-image:linear-gradient( rgba(0,0,0,0.8)  ,rgba(0,0,0,0.8)) ,url(./img/background.png);
+    overflow: hidden;" class="max-sm:bg-full bg-zinc-600  w-[60%] mx-auto pb-52 mt-10 text-center pt-32 rounded-md ">
+        <h1 id="time" class="text-[50px] text-white font-semibold">00 : 00 : 00</h1>
+        <div class="buttons flex justify-center gap-5 mt-12 mb-14">
+            <button><img src="./img/stop.png" alt="" class="h-20" onclick="stop()"></button>
+            <button><img src="./img/start.png" alt="" class="h-28 hover:bg-black" onclick="start()"></button>
+            <button><img src="./img/reset.png" alt="" class="h-20" onclick="restart()"></button>
+
+        </div>
+    </div>
+
+
+    <script src="./app.js"></script>
+</body>
+
+</html>
